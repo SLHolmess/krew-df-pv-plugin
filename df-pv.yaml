@@ -1,7 +1,7 @@
 apiVersion: krew.googlecontainertools.github.com/v1alpha2
 kind: Plugin
 metadata:
-  name: df-pv
+  name: df-pv-test
 spec:
   version: v0.1
   platforms:
