@@ -1,0 +1,21 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: df-pv
+spec:
+  version: v0.1
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    # {{addURIAndSha "https://github.com/yashbhutwala/kubectl-df-pv/releases/download/{{ .TagName }}/kubectl-df-pv_{{ .TagName }}_linux_amd64.tar.gz" .TagName }}
+    uri: https://github.com/SLHolmess/kubectl-df-pv/releases/download/v0.1/df-pv.tar.gz
+    files:
+    - from: "df-pv"
+      to: "."
+    bin: "df-pv"
+  shortDescription: Show disk usage (like unix df) for persistent volumes
+  homepage: https://github.com/SLHolmess/kubectl-df-pv
+  description: |
+    This plugin emulates Unix style df for persistent volumes.
