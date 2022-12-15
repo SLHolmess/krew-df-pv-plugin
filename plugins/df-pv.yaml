@@ -11,7 +11,7 @@ spec:
         arch: amd64
     # {{addURIAndSha "https://github.com/yashbhutwala/kubectl-df-pv/releases/download/{{ .TagName }}/kubectl-df-pv_{{ .TagName }}_linux_amd64.tar.gz" .TagName }}
     uri: https://github.com/SLHolmess/kubectl-df-pv/releases/download/v0.0.1/df-pv.tar.gz
-    sha256: f52884d8c6d295171d87884892baaf2e45b8ae914b9652ac1d788b9aceca4674
+    sha256: e17e073d01969a6f2a7eec7b2167ecae67b939bd2f70c1bddf3c720376656b10
     files:
     - from: "df-pv"
       to: "."
